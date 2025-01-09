@@ -38,7 +38,7 @@ rm -rf awesome_pkg
 # Change wallpaper
 echo "Changing wallpaper..."
 rm ~/pictures/wallpaper/abstract.png
-wget https://github.com/0w15h3115/Kali-Config/blob/main/abstract.png > ~/pictures/wallpaper/abstract.png
+sudo wget https://github.com/0w15h3115/Kali-Config/blob/main/abstract.png > ~/pictures/wallpaper/abstract.png
 
 # Change kitty config
 echo "Changing kitty theme..."

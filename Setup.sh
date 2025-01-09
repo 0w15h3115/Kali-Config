@@ -61,7 +61,7 @@ echo "Please change the default shell..."
 
 sudo chsh
 
-echo "Don't forget to Run PackerSync in nvim, if needed try PackerSync again \Login to firefox \Add /snap/bin to path with sudo nvim /etc/environment"
+echo "Don't forget to Run PackerSync in nvim, if needed try PackerSync again \nLogin to firefox \nAdd /snap/bin to path with sudo nvim /etc/environment"
 
 #Uncomment to self destruct script
 # rm -- "$0"

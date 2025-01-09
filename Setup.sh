@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo echo "Please Authenticate..."
+
 # Update and Upgrade
 sudo apt-get update -y
 

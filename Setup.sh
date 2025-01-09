@@ -42,13 +42,13 @@ wget https://github.com/0w15h3115/Kali-Config/blob/main/abstract.png > ~/picture
 
 # Change kitty config
 echo "Changing kitty theme..."
-rm ~/.config/kitty/themes/current-theme.conf
-wget https://github.com/0w15h3115/Kali-Config/blob/main/current-theme.conf > ~/.config/kitty/themes/current-theme.conf
+sudo rm ~/.config/kitty/themes/current-theme.conf
+sudo wget https://github.com/0w15h3115/Kali-Config/blob/main/current-theme.conf > ~/.config/kitty/themes/current-theme.conf
 
 # Download and install nvim config
 echo "Installing neovim config..."
-rm -rf ~/.config/nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim && git clone https://github.com/vinnydiehl/nvim-config.git ~/.config/nvim && git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim && mv ~/.config/nvim/after ~/aftertmp && nvim "+:PackerSync"
-mv ~/aftertmp ~/.config/nvim/after && nvim
+sudo rm -rf ~/.config/nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim && git clone https://github.com/vinnydiehl/nvim-config.git ~/.config/nvim && git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim && mv ~/.config/nvim/after ~/aftertmp && nvim "+:PackerSync"
+sudo mv ~/aftertmp ~/.config/nvim/after && nvim
 
 # Set zsh as default shell
 echo "Please change the default shell to zsh..."

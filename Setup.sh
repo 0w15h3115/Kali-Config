@@ -29,18 +29,20 @@ tar -xzf awesome.tgz
 
 cd awesome
 
-mv awesome_pkg/awesome ~/.config
+sudo rm -rf ~/.config/awesome
+
+sudo mv awesome_pkg/awesome ~/.config
 
 mkdir -p ~/pictures
 
 sudo rm -rf /usr/share/awesome/themes/zenburn
 
-sudo mv ~/.config/awesome_pkg/zenburn /usr/share/awesome/themes
+sudo mv awesome_pkg/zenburn /usr/share/awesome/themes
 
 # Self-destruct
 rm -rf awesome_pkg
 
-rm -- "$0"
+#rm -- "$0"
 
 # Download and install nvim config
 rm -rf ~/.config/nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim && git clone https://github.com/vinnydiehl/nvim-config.git ~/.config/nvim && git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim && mv ~/.config/nvim/after ~/aftertmp && nvim "+:PackerSync"

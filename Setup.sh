@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Please authenticate to run the script"
+
+sudo -v
+
 # Update and Upgrade
 sudo apt-get update -y
 

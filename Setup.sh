@@ -44,6 +44,21 @@ echo "Removing awesome_pkg..."
 
 rm -rf awesome_pkg
 
+# Change wallpaper
+echo "Changing wallpaper..."
+
+rm ~/pictures/wallpaper/abstract.png
+
+wget https://github.com/0w15h3115/Kali-Config/blob/main/abstract.png > ~/pictures/wallpaper/abstract.png
+
+# Change kitty config
+echo "Changing kitty theme..."
+
+rm ~/.config/kitty/themes/current-theme.conf
+
+wget https://github.com/0w15h3115/Kali-Config/blob/main/current-theme.conf > ~/.config/kitty/themes/current-theme.conf
+
+
 # Download and install nvim config
 echo "Installing neovim config..."
 

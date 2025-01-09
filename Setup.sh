@@ -53,7 +53,7 @@ sudo mv ~/aftertmp ~/.config/nvim/after && nvim
 # Set zsh as default shell
 echo "Please change the default shell to zsh..."
 sudo chsh
-echo "Don't forget to Run PackerSync in nvim, if needed try PackerSync again \nLogin to firefox \nAdd /snap/bin to path with sudo nvim /etc/environment"
+echo "Don't forget to Run :PackerSync in nvim, if needed try PackerSync again \nLogin to firefox \nAdd /snap/bin to path with sudo nvim /etc/environment"
 
 # Self-destruct script
 rm -- "$0"

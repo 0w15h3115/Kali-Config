@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Authenticate upfront
-echo "Please authenticate to run the script"
+echo "Please authenticate..."
 sudo -v
 
 # Update and Upgrade

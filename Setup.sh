@@ -1,20 +1,16 @@
-#!/bin/sh
-
-sudo echo "Please Authenticate..."
+#!/usr/bin/env bash
 
 # Update and Upgrade
 sudo apt-get update -y
-
-sudo apt update -y
 
 sudo apt-get upgrade -y
 
 sudo apt upgrade  -y
 
 # Install dependencies
-echo "Installing dependencies..."
+echo "Installing dependencies and packages..."
 
-sudo apt install zsh awesome neovim alsa-utils ncat snapd snap lf -y 
+sudo apt install zsh awesome neovim alsa-utils obsidian ncat snapd snap lf -y 
 
 sudo systemctl enable --now snapd
 
@@ -63,7 +59,7 @@ sudo chsh
 
 echo "Don't forget to Run PackerSync in nvim, if needed try PackerSync again \nLogin to firefox \nAdd /snap/bin to path with sudo nvim /etc/environment"
 
-#Uncomment to self destruct script
-# rm -- "$0"
+# Self-destruct script
+rm -- "$0"
 
 

@@ -1,2 +1,2 @@
 # Kali-Config
-Personal configuration for Kali Linux
+Personal configuration files for Kali Linux

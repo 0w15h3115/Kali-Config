@@ -15,7 +15,9 @@ echo "Installing dependencies and packages..."
 sudo apt install zsh awesome neovim alsa-utils obsidian ncat snapd snap lf -y 
 sudo systemctl enable --now snapd
 sudo systemctl enable --now snapd.apparmor
+echo "Installing discord"
 sudo snap install discord -y
+echo "Installing spotify"
 sudo snap install spotify -y
 
 # Download and install Awesome config

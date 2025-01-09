@@ -51,7 +51,7 @@ mv ~/aftertmp ~/.config/nvim/after && nvim
 
 
 # Set zsh as default shell
-    # chsh
+sudo chsh
     
 # Run PackerSync in nvim, if needed try PackerSync again
 

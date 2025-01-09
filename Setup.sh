@@ -53,7 +53,7 @@ mv ~/aftertmp ~/.config/nvim/after && nvim
 
 
 # Set zsh as default shell
-echo "Please change the default shell..."
+echo "Please change the default shell to zsh..."
 
 sudo chsh
 

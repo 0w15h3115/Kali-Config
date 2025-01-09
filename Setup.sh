@@ -14,9 +14,9 @@ sudo apt upgrade  -y
 # Install dependencies
 sudo apt install zsh awesome neovim alsa-utils ncat snapd snap lf -y 
 
-sudo systemctl enable snapd
+sudo systemctl enable --now snapd
 
-sudo systemctl start snapd
+sudo systemctl enable --now snapd.apparmor
 
 sudo snap install discord -y
 
@@ -35,7 +35,7 @@ mkdir -p ~/pictures
 
 sudo rm -rf /usr/share/awesome/themes/zenburn
 
-sudo mv awesome_pkg/zenburn /usr/share/awesome/themes
+sudo mv ~/.config/awesome_pkg/zenburn /usr/share/awesome/themes
 
 # Self-destruct
 rm -rf awesome_pkg

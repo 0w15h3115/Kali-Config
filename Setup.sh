@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Authenticate upfront
 echo "Please authenticate to run the script"
 
 sudo -v
